@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "WeatherApp",
-    "slug": "WeatherApp",
+    "name": "RainCheck",
+    "slug": "raincheck",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -27,9 +29,13 @@
       "favicon": "./assets/favicon.png",
       "build": {
         "babel": {
-          "include": ["deprecated-react-native-listview"]
+          "include": [
+            "deprecated-react-native-listview"
+          ]
         }
       }
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/catplotlib/WeatherApp"
   }
 }

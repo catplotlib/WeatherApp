@@ -44,16 +44,16 @@ const App = () => {
     }
     // time = 7;
     if (time >= 18) {
-      setBg("3");
+      setBg({ uri: "https://i.ibb.co/j3hnrS8/3.png" });
     }
     if (time >= 0) {
-      setBg("3");
+      setBg({ uri: "https://i.ibb.co/j3hnrS8/3.png" });
     }
     if (time > 5 && time < 8) {
-      setBg("1");
+      setBg({ uri: "https://i.ibb.co/MZcgh0b/1.png" });
     }
     if (time > 9 && time < 19) {
-      setBg("2");
+      setBg({ uri: "https://i.ibb.co/6BpQ8Gx/2.png" });
     }
   };
 
@@ -69,10 +69,7 @@ const App = () => {
         <View style={{ width: windowWidth, height: windowHeight }}>
           {loading === false ? (
             <>
-              <ImageBackground
-                source={require(`./assets/${bg}.png`)}
-                style={styles.container}
-              >
+              <ImageBackground source={bg} style={styles.container}>
                 <View style={styles.current}>
                   <View>
                     <View>
@@ -112,7 +109,7 @@ const App = () => {
 };
 
 export default App;
-//blajaduhadi
+
 const styles = StyleSheet.create({
   form: {
     flex: 1,
