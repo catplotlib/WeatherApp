@@ -112,7 +112,7 @@ const App = () => {
 };
 
 export default App;
-
+//blajaduhadi
 const styles = StyleSheet.create({
   form: {
     flex: 1,
