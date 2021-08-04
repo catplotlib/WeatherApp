@@ -105,6 +105,7 @@ const App = () => {
             </ImageBackground>
           )}
         </View>
+        <View></View>
       </ScrollView>
     </>
   );
